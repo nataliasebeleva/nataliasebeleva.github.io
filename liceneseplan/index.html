@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тестовое задание</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="#" class="form">
+		<div id="list">
+			<p class="licen licen1" id="licen1"><input id="radio1" type="radio" name="licen" value="licen1"> <label for="radio1">LICENSEPLAN#1</label> <span style="font-size: 12px; letter-spacing: 0.5px;">$13 per license</span></p>
+		<p class="licen licen2" id="licen2"><input id="radio2" type="radio" name="licen" value="licen2"><label for="radio2">LICENSEPLAN#2</label> <span style="font-size: 12px; letter-spacing: 0.5px;">$22 per license</span></p>
+		<p class="licen licen3 bg" id="licen3"><input id="radio3" type="radio" name="licen" value="licen3" checked><label for="radio3">LICENSEPLAN#3</label> <span style="font-size: 12px; letter-spacing: 0.5px;">$34 per license</span></p>
+		</div>
+		<hr>
+		<p style="font-family: sans-serif; font-size: 12px;">Number of licenses:
+			<select name="number" id="select">
+				<option id="1" value="n1">1</option>
+				<option id="2" value="n2">2</option>
+				<option id="3" value="n3">3</option>
+				<option id="4" value="n4">4</option>
+				<option id="5" value="n5">5</option>
+				<option id="6" value="n6">6</option>
+				<option id="7" value="n7">7</option>
+				<option id="8" value="n8">8</option>
+				<option id="9" value="n9">9</option>
+				<option id="10" value="n10" selected>10</option>
+			</select>
+		</p>
+		<hr>
+		<p style="color: gray; letter-spacing: 0.5px; font-family: 'bebas';">TOTAL: <span id="sum" style="float: none; color: #0000ffc9; letter-spacing: 1px;"> $340<sup>us</sup>	
+			
+		</span></p>
+		<input type="submit" value="BUY NOW">
+		<p style="color: #0000ffc9; font-family: sans-serif; font-size: 12px;">Selected plan: # <span id="selectedPlan" style="float: none;">3</span></p>
+	</form>
+	<script>
+		var selecting = 10;
+		var per = 34;
+		// выделение активного радио
+		    document.getElementById('radio1').addEventListener('click', function(event) {
+		         document.getElementById('licen1').classList.add('bg');
+		         document.getElementById('licen2').classList.remove('bg');
+		         document.getElementById('licen3').classList.remove('bg');
+		         document.getElementById('selectedPlan').innerHTML = '1';
+		         var sum = selecting*13;
+				 document.getElementById('sum').innerHTML = '$'+ sum + '<sup>us</sup>';
+		    });
+			document.getElementById('radio2').addEventListener('click', function(event) {
+		         document.getElementById('licen2').classList.add('bg');
+		         document.getElementById('licen1').classList.remove('bg');
+		         document.getElementById('licen3').classList.remove('bg');
+		         document.getElementById('selectedPlan').innerHTML = '2';
+		         var sum = selecting*22;
+				 document.getElementById('sum').innerHTML = '$'+ sum + '<sup>us</sup>';
+		    });
+		    document.getElementById('radio3').addEventListener('click', function(event) {
+		         document.getElementById('licen3').classList.add('bg');
+		         document.getElementById('licen1').classList.remove('bg');
+		         document.getElementById('licen2').classList.remove('bg');
+		         document.getElementById('selectedPlan').innerHTML = '3';
+		         var sum = selecting*34;
+				 document.getElementById('sum').innerHTML = '$'+ sum + '<sup>us</sup>';
+		    });
+
+		    
+		// Подсчет суммы    
+		var select = document.querySelector('select'),
+		    options = document.querySelectorAll('select option');
+
+		for(var i = 0; i < options.length; i++){
+
+		options[i].my_function = function() {
+			console.log(i);
+
+		if (document.getElementById('radio1').checked){
+		per = 13;
+		}
+		else if(document.getElementById('radio2').checked){
+		per = 22;
+		}
+		else{
+		per = 34;
+		}
+		var sum = this.getAttribute('id')*per;
+		document.getElementById('sum').innerHTML = '$'+ sum + '<sup>us</sup>';
+		};
+		};
+
+		select.onchange = function() {
+		var indexSelected = select.selectedIndex,
+		option = select.querySelectorAll('select option')[indexSelected];
+		selecting = indexSelected+1;
+		option.my_function();
+		};
+		selecting = 10;
+	</script>
+</body>
+</html>
