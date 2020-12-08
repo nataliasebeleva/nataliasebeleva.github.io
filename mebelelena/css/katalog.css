@@ -1,0 +1,11 @@
+/*-------------tovary--------------*/
+.tovary {
+	margin-top: 40px;
+}
+.tovar img {
+	height: 380px;
+	width: 300px;
+}
+.tovar p {
+	text-align: center;
+}
