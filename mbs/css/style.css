@@ -1,0 +1,618 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('/fonts/ProximaNova-Regular.eot');
+    src: url('/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('/fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	font-size: 24px;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+.container {
+	width: 1519px;
+	max-width: 85%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+* {
+  outline: 0 !important;
+  font-family: 'Proxima Nova Rg'
+}
+
+/*----------MIDDLE SECTION QUESTIONS---------------*/
+#questions {
+	position: relative;
+	z-index: 2000;
+}
+#questions h2 {
+	margin-top: 15%;
+	margin-bottom: 40px;
+	font-family: 'Proxima Nova Rg';
+	font-size: 84px;
+}
+.questions {
+	margin-left: 10px;
+	background: black;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	border-radius: 23px;
+	box-shadow: 2px 3px 20px 7px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 2px 3px 20px 7px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px 3px 20px 7px rgba(0,0,0,0.1);
+}
+.questions img {
+	width: 637px;
+	height: 477px;
+	border-top-left-radius: 23px;
+	border-bottom-left-radius: 23px;
+}
+
+.questions form {
+	padding-top: 4%;
+	padding-left: 3%;
+	padding-right: 131px;
+	color: white;
+	font-family: 'Proxima Nova Rg';
+	font-size: 24px;
+}
+.questions form p {
+	font-size: 24px;
+	width: 99%;
+}
+.questions form input {
+	margin-top: 5%;
+}
+.questions form .input-text {
+	width: 210px;
+	color: white;
+	border: none;
+	background: black;
+	border-bottom: 1.5px solid white;
+	margin-right: 4%;
+	padding-bottom: 8px;
+}
+::-webkit-input-placeholder {color: white; font-size: 18px;}
+::-moz-placeholder          {color: white; font-size: 18px;}/* Firefox 19+ */
+:-moz-placeholder           {color: white; font-size: 18px;}/* Firefox 18- */
+:-ms-input-placeholder      {color: white; font-size: 18px;}
+
+.questions form .submit {
+color: white;
+background: black;
+padding: 15px 50px;
+width: 211px;
+cursor: pointer;
+border: 1.5px solid white;
+font-size: 24px;
+}
+.questions form .submit:hover,
+.questions form .submit:focus,
+.questions form .submit:active {
+	background: white;
+	color: black;
+	font-weight: bold;
+}
+.questions form .checkbox {
+	margin-right: 10px;
+	color: black;
+	height: 15px;
+	width: 15px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.checkboxes {
+	margin-top: 5%;
+}
+.checkboxes span {
+	border-bottom: 1px solid white;
+}
+label:before {
+  content: " ";
+  color: #fff;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 4%;
+  position: relative;
+  text-align: center;
+  line-height: 0.8;
+  width: 15px;
+  height: 15px;
+  font-size: 24px;
+  border: 1.5px solid #FFF;
+  vertical-align: top;
+  cursor:pointer;
+}
+
+input:checked + label:before {
+  content: "✓";
+  color: #fff;
+  /*border: 1.5px solid white;*/
+  background: black;
+  color: #fff;
+}
+input:disabled + label:before {
+  
+}
+/*-------------------MIDDLE SECTION KONTAKTY--------------------*/
+#kontakty {
+	position: relative;
+}
+.kontakty-relative {
+	left: 0;
+	margin-top: -250px;
+	background: #F6F6F6;
+	/*position:absolute;*/
+	width: 100%;
+	padding-bottom: 10%;
+}
+#kontakty h2 {
+	padding-top: 28%;
+	padding-bottom: 50px;
+	font-family: 'Proxima Nova Rg';
+	font-size: 84px;
+}
+/*.kontakty-content {
+	display: flex;
+}*/
+.contacts {
+	float:left;
+    margin-right: 70px;
+}
+.contact {
+	font-family: 'Proxima Nova Rg';
+}
+.contact span {
+	color: #5472A5;
+}
+.icons a {
+	z-index: 2000;
+	height: 55px;
+	width: 55px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.icons img:hover {
+	box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1);
+}
+.icons img {
+	border-radius: 10px;
+	border: 0;
+	height: 85px;
+	width: 85px;
+}
+
+/*--------------MIDDLE SECTION GEO----------------*/
+
+#GEO {
+	/*padding-top: 160px;*/
+	position: relative;
+}
+#GEO h2 {
+	margin-top: 15%;
+	margin-bottom: 40px;
+	font-family: 'Proxima Nova Rg';
+	font-size: 84px;
+}
+.address {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+#GEO .Moscow {
+	color: #5472A5;
+	/*float: left;*/
+	width: 603px;
+	margin-right: 80px;
+	margin-bottom: 50px;
+
+}
+#GEO .Piter {
+	width: 604px;
+
+}
+.map {
+	/*margin-top: 40px;*/
+	background-image: url(../img/map.png);
+	height: 596px;
+	position: relative;
+}
+.map-btn {
+	position: absolute;
+	/*z-index: 1000;*/
+	/*margin-bottom: 70px;*/
+	background: white;
+	padding: 10px 30px;
+	padding-right: 80px;
+	text-align: left;
+	border-radius: 50px;
+	text-decoration: none;
+	left: 67%;
+	bottom: 10%;
+	display: block;
+	box-shadow: 2px 3px 20px 7px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 2px 3px 20px 7px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px 3px 20px 7px rgba(0,0,0,0.1);
+}
+.map-btn img {
+	position:absolute;
+	right: 8%;
+	height:30px;
+	margin-left: 20px;
+	margin-top: -2px;
+	padding: 0;
+}
+.map-btn:hover {
+	text-decoration: underline;
+	box-shadow: 2px 3px 13px 7px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 2px 3px 13px 7px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px 3px 13px 7px rgba(0,0,0,0.1);
+}
+.move-maps {
+	color: #FF0000;
+	padding-right: 135px;
+	margin-bottom: 60px;
+	/*padding-left: 45px;*/
+}
+
+.move-navigator {
+	color: #ECA704;
+}
+
+
+/*------------------MOBIL VERSION----------------*/
+@media screen and (max-width: 767px) {
+
+	/*QUESTIONS----------------*/
+	.container {
+		max-width: 345px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	#questions h2 {
+		margin-top: 80px;
+		font-size: 30px;
+	}
+	.questions {
+		margin: 0;
+	}
+	.questions img {
+		display: none !important;
+	}
+	.questions form {
+		position:relative;
+		padding-top: 40px;
+		padding-right: 13px;
+		padding-left: 13px;
+		padding-bottom: 70px;
+	}
+	.questions form p {
+		width: 100%;
+		font-size: 16px;
+	}
+	.questions form .input-text {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	::-webkit-input-placeholder {font-size: 16px;}
+    ::-moz-placeholder          {font-size: 16px;}/* Firefox 19+ */
+    :-moz-placeholder           {font-size: 16px;}/* Firefox 18- */
+    :-ms-input-placeholder      {font-size: 16px;}
+	.questions form .submit {
+		font-size: 18px;
+		position: absolute;
+		bottom: 7%;
+		width: 315px;
+		padding: 15px 0;
+		padding: 15px 30px;
+	}
+	.questions form .checkboxes {
+		position: relative;
+		bottom: 10%;
+	}
+	label {
+		font-size: 16px;
+	}
+    label:before {
+    	width: 20px;
+    	height: 20px;
+		line-height: 1;
+    }
+	input:checked + label:before {
+		width: 20px;
+		height: 20px;
+		/*line-height: 1.3;*/
+	}
+	/*KONTAKTY-------------------------*/
+	.kontakty-relative {
+		margin-top: -330px;
+		padding-bottom: 40px;
+	}
+	#kontakty h2 {
+		padding-top: 400px;
+		padding-bottom: 40px;
+		font-size: 25px;
+	}
+	.contacts {
+		margin-bottom: 40px;
+	}
+	.contact {
+		font-size: 15.4px;
+		width: 100%;
+	}
+	.icons img {
+		height: 45px;
+		width: 45px;
+	}
+	/*GEO--------------------------------------*/
+	#GEO {
+		padding-bottom: 20px;
+	}
+	#GEO h2 {
+		margin-top: 80px;
+		font-size: 28px;
+	}
+	.address {
+		display: inline-block;
+		
+	}
+	#GEO .Moscow {
+		margin-bottom: 20px;
+	}
+	.Moscow, .Piter {
+		margin-right: 0 !important;
+		width: 100% !important;
+		font-size: 16px;
+	}
+	.map {
+		margin-top: 40px;
+		height: 400px;
+		margin-bottom: 180px;
+	}
+	.move-maps {
+		padding: 0;
+		padding-right: -5px !important;
+		/*padding-right: 95px !important;*/
+	}
+	
+	.map-btn {
+		overflow-x: hidden;
+		display: block;
+		margin: 0 auto;
+		font-size: 16px;
+		position:relative;
+		width: 70%;
+		right: 0 !important;
+		left: 0 !important;
+		bottom: -440px; !important;
+		padding: 0;
+		padding-left: 70px;
+		padding-right: 0;
+		text-align: left;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		box-shadow: 3px 3px 10px 7px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 3px 3px 10px 7px rgba(0,0,0,0.1);
+	-moz-box-shadow: 3px 3px 10px 7px rgba(0,0,0,0.1);
+	}
+	.map-btn img {
+		position: absolute;
+		padding: 0;
+		top: 23%;
+		left: 0;
+		margin-right: 10px;
+		/*bottom: 5%;*/
+	}
+	.move-maps {
+		margin-bottom: 25px !important;
+	}
+	.move-navigator {
+		margin-bottom: 40px !important;
+	}
+	.move-maps img {
+		
+	}
+	#GEO br {
+		display: none;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#questions h2 {
+		font-size: 60px;
+	}
+	#kontakty h2 {
+		font-size: 60px;
+	}
+	#GEO h2 {
+		font-size: 60px;
+	}
+	.questions img {
+		display: none !important;
+	}
+	.questions form {
+		padding-top: 40px !important;
+		padding-left: 30px !important;
+		padding-right: 30px !important;
+		padding-bottom: 40px !important;
+	}
+	.questions form  p {
+		width: 550px !important;
+	}
+	.questions form .text-input {
+		width: 140px !important;
+	}
+	#kontakty h2 {
+		padding-top: 350px;
+	}
+	.kontakty-relative {
+		margin-top: -240px;
+	}
+	.icons {
+		margin-top: 40px;
+		display: inline-block;
+	}
+	.icons img {
+		height: 55px;
+		width: 55px;
+	}
+	.map-btn {
+		display: block;
+		width: 350px;
+		left: 33%;
+		padding-right: 78px;
+	}
+	.move-maps {
+		padding-right: 78px;
+		margin-bottom: 90px;
+	}
+	#GEO br {
+		display: none;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	#questions h2 {
+		font-size: 60px;
+	}
+	#kontakty h2 {
+		font-size: 60px;
+	}
+	#GEO h2 {
+		font-size: 60px;
+	}
+	body, label {
+		font-size: 30px !important;
+	}
+	.questions img {
+		display: none !important;
+	}
+	.questions form {
+		padding-top: 40px !important;
+		padding-left: 30px !important;
+		padding-right: 30px !important;
+		padding-bottom: 40px !important;
+	}
+	.questions form p {
+		font-size: 28px;
+	}
+	::-webkit-input-placeholder { font-size: 20px;}
+	::-moz-placeholder          { font-size: 20px;}/* Firefox 19+ */
+	:-moz-placeholder           { font-size: 20px;}/* Firefox 18- */
+	:-ms-input-placeholder      { font-size: 20px;}
+	label:before {
+		height: 20px;
+		width: 20px;
+		font-size: 28px;
+	}
+
+	#kontakty h2 {
+		padding-top: 370px;
+	}
+	.kontakty-relative {
+		margin-top: -240px;
+	}
+	.icons {
+		margin-top: 40px;
+		display: inline-block;
+	}
+	.map-btn {
+	display: block;
+	width: 350px;
+	left: 47%;
+	padding-right: 78px;
+	}
+	.move-maps {
+	padding-right: 78px;
+	margin-bottom: 100px;
+	}
+	.map-btn img {
+		margin-top: 2px;
+		right: 7%;
+	}
+	.move-navigator img {
+		top: 30px;
+	}
+	#GEO br {
+		display: none;
+	}
+	
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+	body, input, .checkboxes {
+		font-size: 16px !important;
+	}
+	::-webkit-input-placeholder { font-size: 14px;}
+	::-moz-placeholder          { font-size: 14px;}/* Firefox 19+ */
+	:-moz-placeholder           { font-size: 14px;}/* Firefox 18- */
+	:-ms-input-placeholder      { font-size: 14px;}
+	.questions img {
+		width: 437px;
+		height: 327px;
+	}
+	.questions form {
+		padding-top: 40px;
+		padding-left: 30px;
+	}
+	.questions form p {
+		font-size: 18px;
+		width: 550px;
+	}
+	.questions form .input-text {
+		width: 150px;
+	}
+	.questions form .submit {
+		font-size: 16px !important;
+		padding: 8px 20px !important;
+		width: 150px;
+	}
+	#questions h2 {
+		font-size: 60px;
+	}
+	#kontakty h2 {
+		font-size: 60px;
+	}
+	#GEO h2 {
+		font-size: 60px;
+	}
+	#GEO .Moscow, #GEO .Piter {
+		width: 400px;
+	}
+	.icons img {
+		height: 55px;
+		width: 55px;
+	}
+	.map-btn {
+		
+	}
+	.map-btn img {
+		margin-top: -6px;
+	}
+	.move-maps {
+		
+	}
+	.move-navigator {
+		padding-right: 100px;
+	}
+	.move-maps img {
+		
+	}
+}	
